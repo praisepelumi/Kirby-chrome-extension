@@ -7,5 +7,6 @@
     "action":{
         "default_popup": "index.html",
         "default_title": "Breathe In"
-    }
+    },
+    "web_accessible_resources": "src/assets/kirby.png"
 }
