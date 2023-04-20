@@ -18,7 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
     kirby.style.transition = "all 4s";
     kirby.style.transitionProperty = "width,height";
     kirby.style.position = "absolute"
-    kirby.style.top ="125px"
+    kirby.style.top ="55px"
+    kirby.style.left = "200px"
     kirby.style.width = "100px"
     kirby.style.height = "100px"
 
@@ -60,7 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const oneMinBtn = document.createElement("button")
     oneMinBtn.innerText = "One Minute"
     board.appendChild(oneMinBtn)
-    oneMinBtn.style.position = "relative";
+    oneMinBtn.setAttribute("class", "button")
+    
 
     oneMinBtn.onclick = () => {
         console.log('i was clicked')
@@ -69,8 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const fiveMinBtn = document.createElement("button")
     fiveMinBtn.innerText = "Five Minutes"
-    board.appendChild(fiveMinBtn)
-    fiveMinBtn.position = "relative";
+    board.appendChild(fiveMinBtn);
+    fiveMinBtn.setAttribute("class", "button")
 
     fiveMinBtn.onclick = () => {
         console.log('i was clicked')
@@ -78,9 +80,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const tenMinBtn = document.createElement("button")
-    tenMinBtn.innerText = "TenMinutes"
+    tenMinBtn.innerText = "Ten Minutes"
     board.appendChild(tenMinBtn)
-    tenMinBtn.position = "relative";
+    tenMinBtn.setAttribute("class", "button");
 
     tenMinBtn.onclick = () => {
         console.log('i was clicked')
