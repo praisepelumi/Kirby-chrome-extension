@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         image.src = "src/assets/kirby.png"
         image.style.width = "500px"
         image.style.height = "500px"
+        image.style.translate = "-200px";
         
         setTimeout(() => (breathOut(image)), 4000)
     }
@@ -53,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('hi')
         image.style.width = "100px";
         image.style.height = "100px";
+        image.style.translate = "0px"
         setTimeout(() => (image.src = "src/assets/kirby_walking.webp"), 4000);
 
     }
