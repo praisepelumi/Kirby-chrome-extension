@@ -1,0 +1,11 @@
+{
+    "name": "Kirby Chrome Extension",
+    "version": "1.0.0",
+    "description": "Kirby Mindfulness App",
+    "manifest_version": 3,
+    "author": "Lucie and Praise",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Breathe In"
+    }
+}

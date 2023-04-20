@@ -1,0 +1,17 @@
+#board {
+  height: 200px;
+  width: 500px;
+  border: 1px black solid;
+  background-color: lightpink;
+  position: relative;
+}
+
+#timer {
+    font-size: medium;
+  border: 1px black solid;
+  position: relative;
+}
+
+.button {
+    background-color: magenta;
+}
