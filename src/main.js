@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
     kirby.style.width = "100px"
     kirby.style.height = "100px"
 
-    // takes a chosen duration(timer mode: 1,5 or 10) and sets remaining time
+    // takes a chosen duration(timer mode: 1,5 or 10) and sets remaining time in (min * 60 sec/min)
     function switchMode(numMins) {
-        timer.remainingTime = numMins * 5;
+        timer.remainingTime = numMins * 60;
         countDown();
     }
 
@@ -40,9 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function breathIn(image) {
+        
         image.src = "src/assets/kirby.png"
-        image.style.width = "1500px"
-        image.style.height = "1500px"
+        image.style.width = "750px"
+        image.style.height = "750px"
         
         setTimeout(() => (breathOut(image)), 4000)
     }
