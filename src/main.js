@@ -13,12 +13,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     const kirby = document.createElement("img")
-    kirby.setAttribute("src", "src/assets/kirby.png");
+    kirby.setAttribute("src", "src/assets/kirby_walking.webp");
     body.appendChild(kirby)
     kirby.style.transition = "all 4s";
     kirby.style.transitionProperty = "width,height";
-    kirby.style.width = "1px"
-    kirby.style.height = "1px"
+    kirby.style.position = "absolute"
+    kirby.style.top ="125px"
+    kirby.style.width = "100px"
+    kirby.style.height = "100px"
 
     // takes a chosen duration(timer mode: 1,5 or 10) and sets remaining time
     function switchMode(numMins) {
@@ -38,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function breathIn(image) {
-        console.log('breathe in')
+        image.src = "src/assets/kirby.png"
         image.style.width = "1500px"
         image.style.height = "1500px"
         
@@ -47,8 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function breathOut(image) {
         console.log('hi')
-        image.style.width = "100px"
-        image.style.height = "100px"
+        image.style.width = "100px";
+        image.style.height = "100px";
+        setTimeout(() => (image.src = "src/assets/kirby_walking.webp"), 4000);
 
     }
 
@@ -56,6 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const oneMinBtn = document.createElement("button")
     oneMinBtn.innerText = "One Minute"
     board.appendChild(oneMinBtn)
+    oneMinBtn.style.position = "relative";
 
     oneMinBtn.onclick = () => {
         console.log('i was clicked')
@@ -65,6 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const fiveMinBtn = document.createElement("button")
     fiveMinBtn.innerText = "Five Minutes"
     board.appendChild(fiveMinBtn)
+    fiveMinBtn.position = "relative";
 
     fiveMinBtn.onclick = () => {
         console.log('i was clicked')
@@ -74,6 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const tenMinBtn = document.createElement("button")
     tenMinBtn.innerText = "TenMinutes"
     board.appendChild(tenMinBtn)
+    tenMinBtn.position = "relative";
 
     tenMinBtn.onclick = () => {
         console.log('i was clicked')
